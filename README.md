@@ -27,8 +27,3 @@ python analizador_lexico.py
 ```
 
 3. Se imprimen los tokens detectados por línea y la tabla de símbolos final.
-
-### 📄 Requisitos
-
-- Python 3.x
-- Conocimientos básicos de expresiones regulares y análisis léxico.
