@@ -1,9 +1,11 @@
-int main() {
-    int a = 10;
-    float b = 3.14;
-    if (a > b) {
-        return a;
-    } else {
-        return b;
-    }
-}
+def calcular_factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    factorial = 1
+    for i in range(2, n + 1):
+        factorial *= i
+    return factorial
+# Solicitar número al usuario
+numero = int(input("Ingresa un número entero positivo: "))
+resultado = calcular_factorial(numero)
+print(f"El factorial de {numero} es: {resultado}")
