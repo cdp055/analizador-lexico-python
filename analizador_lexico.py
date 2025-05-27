@@ -10,7 +10,7 @@ palabras_reservadas = {
 # Diccionario con expresiones regulares para cada tipo de token
 regex_patterns = {
     'PALABRA_RESERVADA': r'\b(?:' + '|'.join(palabras_reservadas) + r')\b',  # Palabras clave
-    'IDENTIFICADOR': r'\b[a-zA-Z_][a-zA-Z0-9_]*\b',  # Variables o nombres válidos
+    'IDENTIFICADOR': r'\b[a-zA-Z][a-zA-Z0-9_]*[a-zA-Z]\b'  # Variables o nombres válidos
     'NUMERO_DECIMAL': r'\b\d+\.\d+\b',  # Ej: 3.14
     'NUMERO_ENTERO': r'\b\d+\b',  # Ej: 42
     'ASIGNACION': r'=',
